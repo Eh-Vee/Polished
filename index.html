@@ -30,7 +30,7 @@ Booking CTA
   <section class="hero">
     <h2>Elevate Your Everyday Look</h2>
     <p>Luxury nail care in a relaxing, modern space.</p>
-    <a href="#" class="cta-btn">Book Your Appointment</a>
+    <a href="#booking" class="cta-btn" id="show-booking">Book Your Appointment</a>
   </section>
 
   <section class="section">
@@ -59,10 +59,43 @@ Booking CTA
     </div>
   </section>
 
+  <section class="section" id="booking-section" style="display: none;">
+  <h3 class="section-title">Book Your Appointment</h3>
+  <form class="booking-form" action="#" method="POST">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Full Name" required />
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Email Address" required />
+    </div>
+    <div class="form-group">
+      <input type="date" name="date" required />
+    </div>
+    <div class="form-group">
+      <input type="time" name="time" required />
+    </div>
+    <div class="form-group">
+      <select name="service" required>
+        <option value="">Select a Service</option>
+        <option value="manicure">Classic Manicure</option>
+        <option value="gel">Gel Polish</option>
+        <option value="pedicure">Spa Pedicure</option>
+        <option value="nail-art">Custom Nail Art</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <textarea name="message" rows="4" placeholder="Notes or requests (optional)"></textarea>
+    </div>
+    <button type="submit" class="submit-btn"">Book Appointment</button>
+    <button type="button" id="hide-booking" style="margin-top: 1rem;">Close</button>
+  </form>
+</section>
+
+
   <footer>
     <p>📍 101 Glam Blvd, Style City | 📞 (555) 444-5555</p>
     <p>&copy; 2025 Polished</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
